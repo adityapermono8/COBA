@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata dan link ke stylesheet dan script eksternal -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewJeans - Contact</title>
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Link ke Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link ke Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link ke jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Link ke Popper.js (diperlukan untuk Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- Link ke Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Link ke SweetAlert2 untuk notifikasi -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Link ke file JavaScript eksternal -->
+    <script src="js/scripts.js" defer></script>
+    <!-- CSS internal untuk styling halaman -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('aset/cb.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        a, h2, h1 {
+            color: hotpink;
+        }
+        .map-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: azure;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 50px auto;
+            max-width: 1200px;
+        }
+        .contact-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .contact-details {
+            margin-top: 20px;
+        }
+        .contact-details h2 {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .contact-details p {
+            margin: 5px 0;
+            text-align: justify;
+        }
+        .contact-details a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+        .map-container iframe {
+            width: 500px;
+            height: 500px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header dan Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-pink fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="aset/logo.png" alt="NewJeans Logo" class="logo">
+            </a>
+            <!-- Tombol untuk tampilan mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu navigasi -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <!-- Bagian Hero dengan teks tengah -->
+        <section class="contact-hero text-center text-light d-flex align-items-center justify-content-center" style="height: 300px;">
+            <h1>Contact Us</h1>
+        </section>
+        <!-- Inline CSS untuk bagian informasi kontak -->
+        <div class="contact-info text-center mt-5">
+            <h2 style="color: hotpink;">Ways to Reach Us</h2>
+            <p style="color: aliceblue;">Sampaikan Keluhan atau Saran untuk NewJeans</p>
+        </div>
+        <!-- Bagian Formulir Kontak -->
+        <section class="container mt-5 contact-container">
+            <div class="contact-form p-5 bg-light shadow rounded">
+                <h2>Get in Touch</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-pink">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- Bagian Peta dan Detail Kontak -->
+        <div class="map-container">
+            <div class="map-info">
+                <h2>INI ADALAH MAPS</h2>
+                <p>Jika anda bingung anda dapat menemukan kami di maps atau bisa hubungi kami melalui WhatsApp dibawah atau email kami.</p>
+                <p><strong>WhatsApp</strong></p>
+                <p><a href="https://wa.me/+6285799201044" target="_blank">+6285799201044</a></p>
+                <p><strong>Email</strong></p>
+                <p><a href="mailto:info@newjeans.com">info@newjeans.com</a></p>
+            </div>
+            <!-- Embed Google Maps -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8361153074877!2d-122.08424968468117!3d37.42206597982545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5e8d88ffb19%3A0x618b2a6e028b914b!2sGoogleplex!5e0!3m2!1sen!2sus!4v1614312374181!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-pink text-light text-center py-4">
+        <div class="container">
+            <div class="logo mb-2">
+                <img src="aset/logo.png" alt="NewJeans Logo" style="height: 50px; vertical-align: middle;">
+                NewJeans
+            </div>
+            <!-- Menu navigasi footer -->
+            <ul class="list-inline mb-2">
+                <li class="list-inline-item"><a class="text-light" href="index.html">Home</a></li>
+                <li class="list-inline-item"><a class="text-light" href="about.html">About</a></li>
+                <li class="list-inline-item"><a class="text-light" href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Kontak -->
+            <div class="contact mb-2">
+                <a href="mailto:info@newjeans.com" class="text-light">info@newjeans.com</a> |
+                <a href="https://wa.me/+6285799201044" class="text-light">WhatsApp</a>
+            </div>
+            <!-- Ikon sosial media -->
+            <div class="social">
+                <a href="https://facebook.com" class="text-light mr-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" class="text-light mr-2" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" class="text-light" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

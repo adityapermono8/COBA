@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata dan link ke stylesheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewJeans - Home</title>
+    <!-- Link ke file CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Link ke Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link ke Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link ke AOS untuk animasi -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!-- Link ke jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Link ke Popper.js (diperlukan untuk Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- Link ke Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Link ke AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Link ke SweetAlert2 untuk notifikasi -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Link ke file JavaScript eksternal -->
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header dan navigasi -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-pink fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="aset/logo.png" alt="NewJeans Logo" class="logo">
+            </a>
+            <!-- Tombol untuk tampilan mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu navigasi -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Main content -->
+    <main>
+        <!-- Bagian hero dengan video background -->
+        <section class="hero">
+            <video autoplay muted loop playsinline class="video-background">
+                <source src="aset/OMG.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+            <h1>Welcome to NewJeans Fan Page</h1>
+            <a href="about.html" class="btn btn-pink">About NewJeans</a>
+        </section>
+        <!-- Bagian pengantar -->
+        <section class="intro text-center">
+            <img src="aset/awal.jpeg" alt="NewJeans" class="img-fluid rounded mx-auto d-block mb-4" style="max-width: 50%;">
+            <h2>NewJeans</h2>
+            <p>NewJeans is a South Korean girl group formed by ADOR. They are known for their vibrant music and captivating performances...</p>
+        </section>
+        <!-- Bagian rilis terbaru -->
+        <section class="latest-releases my-5">
+            <h2 class="text-center">Latest Releases</h2>
+            <div class="row text-center">
+                <!-- Card untuk rilis pertama -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="aset/GODS.jpg" class="card-img-top hover-effect" alt="Release 1">
+                        <div class="card-body">
+                            <p class="card-text">GODS ft. NewJeans (뉴진스)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card untuk rilis kedua -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="aset/How Sweet.jpg" class="card-img-top hover-effect" alt="Release 2">
+                        <div class="card-body">
+                            <p class="card-text">How Sweet NewJeans (뉴진스)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card untuk rilis ketiga -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="aset/Supernatural.jpg" class="card-img-top hover-effect" alt="Release 3">
+                        <div class="card-body">
+                            <p class="card-text">Supernatural NewJeans (뉴진스)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bagian call-to-action untuk kontak -->
+        <section class="contact-cta text-center my-5">
+            <p>HUBUNGI KAMI DENGAN MENEKAN TOMBOL DIBAWAH.</p>
+            <a href="contact.html" class="btn btn-pink">Contact Us</a>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-pink text-light text-center py-4">
+        <div class="container">
+            <!-- Logo dan nama -->
+            <div class="logo mb-2">
+                <img src="aset/logo.png" alt="NewJeans Logo" style="height: 50px; vertical-align: middle;">
+                NewJeans
+            </div>
+            <!-- Menu navigasi footer -->
+            <ul class="list-inline mb-2">
+                <li class="list-inline-item"><a class="text-light" href="index.html">Home</a></li>
+                <li class="list-inline-item"><a class="text-light" href="about.html">About</a></li>
+                <li class="list-inline-item"><a class="text-light" href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Kontak -->
+            <div class="contact mb-2">
+                <a href="mailto:info@newjeans.com" class="text-light">info@newjeans.com</a> |
+                <a href="https://wa.me/+6285799201044" class="text-light">WhatsApp</a>
+            </div>
+            <!-- Ikon sosial media -->
+            <div class="social">
+                <a href="https://facebook.com" class="text-light mr-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" class="text-light mr-2" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" class="text-light" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

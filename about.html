@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata dan link ke stylesheet dan script eksternal -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewJeans - About</title>
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Link ke Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link ke Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link ke AOS untuk animasi -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!-- Link ke jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Link ke Popper.js (diperlukan untuk Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- Link ke Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Link ke AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Link ke SweetAlert2 untuk notifikasi -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Link ke file JavaScript eksternal -->
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header dan Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-pink fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="aset/logo.png" alt="NewJeans Logo" class="logo">
+            </a>
+            <!-- Tombol untuk tampilan mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu navigasi -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Konten Utama -->
+    <main>
+        <!-- Bagian Hero dengan gambar latar belakang -->
+        <section class="about-hero text-center text-light d-flex align-items-center justify-content-center" style="background-image: url('aset/abbck.jpg');">
+            <h1>About NewJeans</h1>
+        </section>
+        
+        <!-- Bagian konten tentang -->
+        <section class="about-content container mt-5">
+            <div class="row">
+                <div class="col-md-12 text-center mb-4">
+                    <h2 style="color: hotpink;">Who Are NewJeans?</h2>
+                    <p>NewJeans is a South Korean girl group formed by ADOR. Known for their dynamic performances and unique music style, NewJeans has captured the hearts of fans worldwide...</p>
+                </div>
+            </div>
+            
+            <!-- Galeri anggota grup dengan AOS animasi -->
+            <div class="row text-center about-gallery">
+
+                <div class="col-md-4" data-aos="fade-up">
+                    <img src="aset/hanni.jpg" alt="Member 1" class="img-thumbnail hover-effect clickable" data-toggle="modal" data-target="#productModal" data-title="HANNI (하니)" data-description="Stage Name: Hanni (하니) Birth Name: Hanni Pham Vietnamese Name: Phạm Ngọc Hân Position: Vocalist Birthday: October 6, 2004 Zodiac Sign: Libra Chinese Zodiac Sign: Monkey Height: 162 cm Weight: ? Blood Type: O MBTI Type: INFP Nationality: Vietnamese-Australian Representative Color: Pink Representative Emoji: 🐰">
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <img src="aset/minji.jpg" alt="Member 2" class="img-thumbnail hover-effect clickable" data-toggle="modal" data-target="#productModal" data-title="MINJI (민지)" data-description="Stage Name: Minji (민지) Birth Name: Kim Minji (김민지) Position: Rapper Birthday: May 07, 2004 Zodiac Sign: Taurus Chinese Zodiac Sign: Monkey Height: 169 cm Weight: ? Blood Type: A MBTI Type: ESTJ (Her previous results were ENTJ, ISFJ) Nationality: Korean Representative Color: Blue Representative Emoji: 🐻">
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <img src="aset/haerin.jpg" alt="Member 3" class="img-thumbnail hover-effect clickable" data-toggle="modal" data-target="#productModal" data-title="HAERIN (해린)" data-description="Stage Name: Haerin (해린) Birth Name: Kang Haerin (강해린) English Name: Vanessa Kang Position: — Birthday: May 15, 2006 Zodiac Sign: Taurus Chinese Zodiac Sign: Dog Height: 164.5 cm Weight: ? Blood Type: B MBTI Type: INTJ (Her previous result was ISTP) Nationality: Korean Representative Color: Green Representative Emoji: 🐱">
+                </div>
+
+                <div class="col-md-4 mt-4" data-aos="fade-up" data-aos-delay="300">
+                    <img src="aset/danni.jpg" alt="Member 4" class="img-thumbnail hover-effect clickable" data-toggle="modal" data-target="#productModal" data-title="DANIELLE (다니엘)" data-description="Stage Name: Danielle (다니엘) Birth Name: Danielle Marsh Korean Name: Mo Jihye (모지혜) Position: — Birthday: April 11, 2005 Zodiac Sign: Aries Chinese Zodiac Sign: Rooster Height: 165 cm Weight: ? Blood Type: AB MBTI Type: ENFP Nationality: Korean-Australian Representative Color: Yellow Representative Emoji: 🐶">
+                </div>
+
+                <div class="col-md-4 mt-4" data-aos="fade-up" data-aos-delay="400">
+                    <img src="aset/hyein.jpg" alt="Member 5" class="img-thumbnail hover-effect clickable" data-toggle="modal" data-target="#productModal" data-title="HYEIN (혜인)" data-description="Stage Name: Hyein (혜인) Birth Name: Lee Hyein (이혜인) English Name: Grace Lee Position: Maknae Birthday: April 21, 2008 Zodiac Sign: Taurus Chinese Zodiac Sign: Rat Height: 170 cm Weight: ? Blood Type: O MBTI Type: INFP (Her former result was ENFP) Nationality: Korean Representative Color: Purple Representative Emoji: 🐣">
+                </div>
+            </div>
+
+            <!-- Bagian produk terbaru -->
+            <div class="row mt-5">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h3>Latest Product</h3>
+                    <img src="aset/P1.jpg" alt="Latest Product" class="img-fluid rounded hover-effect clickable" data-toggle="modal" data-target="#productModal" data-title="Highlights product" data-description="This is the Highlights product description.">
+                    <p><em>Subtitle:</em> Check out the features and specifications of the Highlights product from NewJeans.</p>
+                    <p>Icons: <i class="fas fa-star"></i> <i class="fas fa-heart"></i> <i class="fas fa-music"></i></p>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h3>New Product Release</h3>
+                    <img src="aset/last.jpg" alt="New Product Release" class="img-fluid rounded hover-effect clickable" data-toggle="modal" data-target="#productModal" data-title="Highlights product" data-description="New Product Release.">
+                    <p><em>Subtitle:</em> Check out the features and specifications of the New product Release from NewJeans.</p>
+                    <p>Icons: <i class="fas fa-star"></i> <i class="fas fa-heart"></i> <i class="fas fa-music"></i></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal untuk detail produk -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="productModalImage" src="" alt="Product Image" class="img-fluid mb-3">
+                    <p id="productModalDescription"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-pink" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-pink text-light text-center py-4">
+        <div class="container">
+            <div class="logo mb-2">
+                <img src="aset/logo.png" alt="NewJeans Logo" style="height: 50px; vertical-align: middle;">
+                NewJeans
+            </div>
+            <!-- Menu navigasi footer -->
+            <ul class="list-inline mb-2">
+                <li class="list-inline-item"><a class="text-light" href="index.html">Home</a></li>
+                <li class="list-inline-item"><a class="text-light" href="about.html">About</a></li>
+                <li class="list-inline-item"><a class="text-light" href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Kontak -->
+            <div class="contact mb-2">
+                <a href="mailto:info@newjeans.com" class="text-light">info@newjeans.com</a> |
+                <a href="https://wa.me/+6285799201044" class="text-light">WhatsApp</a>
+            </div>
+            <!-- Ikon sosial media -->
+            <div class="social">
+                <a href="https://facebook.com" class="text-light mr-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" class="text-light mr-2" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" class="text-light" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Inisialisasi AOS untuk animasi
+        AOS.init();
+
+        // Event listener untuk modal produk
+        document.addEventListener('DOMContentLoaded', function () {
+            $('#productModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget); // Button yang memicu modal
+                var title = button.data('title'); // Ambil data title dari button
+                var description = button.data('description'); // Ambil data description dari button
+                var image = button.attr('src'); // Ambil atribut src dari button
+
+                var modal = $(this);
+                modal.find('.modal-title').text(title);
+                modal.find('#productModalImage').attr('src', image);
+                modal.find('.modal-body p').text(description);
+            });
+        });
+    </script>
+</body>
+</html>
